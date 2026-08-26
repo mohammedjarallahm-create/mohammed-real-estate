@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mohammedjarallahm-create.github.io/mohammed-real-estate/sitemap.xml
