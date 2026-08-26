@@ -79,10 +79,10 @@
   <div class="form-card"><div class="form-grid">
     <div class="group"><div class="group-title">1. بيانات مقدم الطلب</div></div>
     <div class="field"><label>الاسم الكامل *</label><input id="ownName" autocomplete="name" placeholder="الاسم كما في الهوية"></div>
+    <div class="field"><label>صفتك بالنسبة للعقار *</label><select id="ownRole"><option value="">اختر الصفة</option><option>مالك العقار</option><option>وكيل أو مفوض عن المالك</option><option>ممثل منشأة مالكة</option></select></div>
     <div class="field"><label>رقم الهوية / الإقامة *</label><input id="ownId" inputmode="numeric" autocomplete="off" maxlength="10" placeholder="10 أرقام"></div>
     <div class="field"><label>تاريخ الميلاد بالميلادي *</label><input id="ownDob" type="date" autocomplete="bday"></div>
-    <div class="field"><label>رقم الجوال *</label><input id="ownPhone" inputmode="tel" autocomplete="tel" placeholder="05xxxxxxxx"></div>
-    <div class="field full"><label>صفتك بالنسبة للعقار *</label><select id="ownRole"><option value="">اختر الصفة</option><option>مالك العقار</option><option>وكيل أو مفوض عن المالك</option><option>ممثل منشأة مالكة</option></select></div>
+    <div class="field full"><label>رقم الجوال *</label><input id="ownPhone" inputmode="tel" autocomplete="tel" placeholder="05xxxxxxxx"></div>
 
     <div class="group"><div class="group-title">2. بيانات العقار</div></div>
     <div class="field"><label>نوع العقار *</label><select id="ownType"><option>شقة</option><option>فيلا</option><option>أرض</option><option>عمارة</option><option>محل تجاري</option><option>مكتب</option><option>مستودع</option><option>أخرى</option></select></div>
@@ -94,11 +94,11 @@
     <div class="field full"><label>رقم وثيقة الملكية / الصك *</label><input id="ownDeed" inputmode="numeric" placeholder="رقم الوثيقة أو الصك"></div>
 
     <div class="group"><div class="group-title">3. حالة العقار والمعلومات المؤثرة</div></div>
-    <div class="field"><label>حالة العقار</label><select id="ownCondition"><option>جاهز</option><option>مؤجر حاليًا</option><option>تحت الإنشاء</option><option>غير مكتمل</option><option>أخرى</option></select></div>
-    <div class="field"><label>عرض الشارع / الواجهة</label><input id="ownFacing" placeholder="مثال: شارع 20م - واجهة غربية"></div>
-    <div class="field full"><label>الخدمات والمرافق</label><textarea id="ownServices" placeholder="كهرباء، ماء، صرف، مواقف، مصعد، خدمات قريبة..."></textarea></div>
-    <div class="field full"><label>هل توجد حقوق أو التزامات أو نزاعات مؤثرة؟</label><textarea id="ownRights" placeholder="رهن، حق انتفاع، نزاع، التزام قائم، أو اكتب: لا يوجد"></textarea></div>
-    <div class="field full"><label>تفاصيل أخرى مهمة</label><textarea id="ownNotes" placeholder="العمر، التشطيب، المميزات، العيوب، الإيجار الحالي أو أي معلومة مؤثرة..."></textarea></div>
+    <div class="field"><label>حالة العقار (اختياري)</label><select id="ownCondition"><option>جاهز</option><option>مؤجر حاليًا</option><option>تحت الإنشاء</option><option>غير مكتمل</option><option>أخرى</option></select></div>
+    <div class="field"><label>عرض الشارع / الواجهة (اختياري)</label><input id="ownFacing" placeholder="مثال: شارع 20م - واجهة غربية"></div>
+    <div class="field full"><label>الخدمات والمرافق (اختياري)</label><textarea id="ownServices" placeholder="كهرباء، ماء، صرف، مواقف، مصعد، خدمات قريبة..."></textarea></div>
+    <div class="field full"><label>هل توجد حقوق أو التزامات أو نزاعات مؤثرة؟ (اختياري)</label><textarea id="ownRights" placeholder="رهن، حق انتفاع، نزاع، التزام قائم، أو اكتب: لا يوجد"></textarea></div>
+    <div class="field full"><label>تفاصيل أخرى مهمة (اختياري)</label><textarea id="ownNotes" placeholder="العمر، التشطيب، المميزات، العيوب، الإيجار الحالي أو أي معلومة مؤثرة..."></textarea></div>
 
     <div class="privacy">بيانات الهوية وتاريخ الميلاد مخصصة للتحقق وإجراءات التعامل مع الطلب، ولا تظهر ضمن نص الإعلان العقاري.</div>
     <label class="check full"><input id="ownConfirm" type="checkbox"><span>أقر بأن البيانات المدخلة صحيحة حسب علمي، وأوافق على التواصل معي بخصوص هذا الطلب.</span></label>
